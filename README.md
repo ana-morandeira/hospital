@@ -15,10 +15,8 @@ Este proyecto es una simulación de la gestión de un hospital desarrollada en J
     * `IWorkable`: Implementada por los Doctores.
     * `IStandardCare`: Implementada por `ConsultationPatient`.
     * `IEmergencyCare`: Implementada por `AmbulancePatient`.
-      
-                                                                                                                                                                                                                         ## 📐 UML 
-      
-        <img width="308" height="206" alt="image" src="https://github.com/user-attachments/assets/fcd0df9f-d783-4260-bbb2-cee1d364b059" />
+       
+        <img width="616" height="412" alt="image" src="https://github.com/user-attachments/assets/fcd0df9f-d783-4260-bbb2-cee1d364b059" />
  
 
 ## 🛠️ Detalle de Clases
