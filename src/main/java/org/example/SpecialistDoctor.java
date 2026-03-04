@@ -13,4 +13,8 @@ public class SpecialistDoctor extends Doctor {
     @Override public void vacations() { System.out.println("30 days of vacation."); }
 
     public void specialtyMethod() { System.out.println("Performing " + specialty + " consultation."); }
+
+    public String getSpecialty() {
+    }
 }
+
