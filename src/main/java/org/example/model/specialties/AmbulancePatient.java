@@ -1,4 +1,7 @@
-package org.example;
+package org.example.model.specialties;
+
+import org.example.interfaces.IEmergencyCare;
+import org.example.model.people.Patient;
 
 public class AmbulancePatient extends Patient implements IEmergencyCare {
     public AmbulancePatient(String id, String firstName, String lastName) { super(id, firstName, lastName); }

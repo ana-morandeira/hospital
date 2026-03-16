@@ -1,4 +1,10 @@
 package org.example;
+import org.example.model.people.Characters;
+import org.example.model.specialties.AmbulancePatient;
+import org.example.model.specialties.ConsultationPatient;
+import org.example.model.specialties.SpecialistDoctor;
+import org.example.model.specialties.StudentDoctor;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,8 +14,8 @@ public class Main {
 
         hospitalStaffAndPatients.add(new SpecialistDoctor("D01", "Gregory", "House", "Diagnostics"));
         hospitalStaffAndPatients.add(new SpecialistDoctor("D02", "Meredith", "Grey", "General Surgery"));
-        hospitalStaffAndPatients.add(new org.example.StudentDoctor("S01", "John", "Dorian", 40, "4th Year"));
-        hospitalStaffAndPatients.add(new org.example.StudentDoctor("S02", "Elliot", "Reid", 35, "4th Year"));
+        hospitalStaffAndPatients.add(new StudentDoctor("S01", "John", "Dorian", 40, "4th Year"));
+        hospitalStaffAndPatients.add(new StudentDoctor("S02", "Elliot", "Reid", 35, "4th Year"));
 
         hospitalStaffAndPatients.add(new ConsultationPatient("P01", "Arthur", "Morgan"));
         hospitalStaffAndPatients.add(new ConsultationPatient("P02", "Sadie", "Adler"));
@@ -19,18 +25,17 @@ public class Main {
         System.out.println("=== HOSPITAL REGISTRY ===\n");
 
         for (Characters person : hospitalStaffAndPatients) {
-            // Información base
             String info = String.format("%-4s | %-20s",
                     person.getId(),
                     person.getFirstName() + " " + person.getLastName());
 
-            // Información específica usando 'instanceof'
+
             if (person instanceof SpecialistDoctor) {
                 SpecialistDoctor doc = (SpecialistDoctor) person;
-                info += " | [DOCTOR] Specialty: " + doc.getSpecialty();
+                info += " | [DOCTOR] Specialty: Cardiology " + doc.getSpecialty();
             }
-            else if (person instanceof org.example.StudentDoctor) {
-                org.example.StudentDoctor student = (org.example.StudentDoctor) person;
+            else if (person instanceof StudentDoctor) {
+                StudentDoctor student = (StudentDoctor) person;
                 info += " | [STUDENT] Grade: " + student.getGrade();
             }
             else if (person instanceof AmbulancePatient) {

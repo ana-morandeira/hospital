@@ -1,4 +1,7 @@
-package org.example;
+package org.example.model.specialties;
+
+import org.example.interfaces.IStandardCare;
+import org.example.model.people.Patient;
 
 public class ConsultationPatient extends Patient implements IStandardCare {
     public ConsultationPatient(String id, String firstName, String lastName) { super(id, firstName, lastName); }

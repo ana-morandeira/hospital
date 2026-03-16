@@ -1,4 +1,6 @@
-package org.example;
+package org.example.model.specialties;
+
+import org.example.model.people.Doctor;
 
 public class StudentDoctor extends Doctor {
     private int studyHours;

@@ -1,4 +1,6 @@
-package org.example;
+package org.example.model.specialties;
+
+import org.example.model.people.Doctor;
 
 public class SpecialistDoctor extends Doctor {
     private String specialty;
@@ -15,6 +17,7 @@ public class SpecialistDoctor extends Doctor {
     public void specialtyMethod() { System.out.println("Performing " + specialty + " consultation."); }
 
     public String getSpecialty() {
+        return "";
     }
 }
 

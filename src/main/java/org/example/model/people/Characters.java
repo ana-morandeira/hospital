@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model.people;
 
 public abstract class Characters {
     private String id;
